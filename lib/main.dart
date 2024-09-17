@@ -9,6 +9,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'Flutter Demo');
+    return MaterialApp(
+        home: Scaffold(
+      backgroundColor: Colors.red,
+      appBar: AppBar(
+        title: const Text("Dicey"),
+        backgroundColor: Colors.red,
+      ),
+      body: const DicePage(),
+    ));
+  }
+}
+
+class DicePage extends StatelessWidget {
+  const DicePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
